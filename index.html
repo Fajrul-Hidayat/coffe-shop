@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kedai Kopi — Crafted with passion, brewed to perfection. A specialty coffee shop serving artisan coffee, fresh pastries, and warm moments." />
+  <meta name="keywords" content="coffee shop, specialty coffee, espresso, latte, cappuccino, pastries, brunch" />
+  <meta name="author" content="Kedai Kopi" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kedai Kopi — Crafted with Passion" />
+  <meta property="og:description" content="Specialty coffee shop serving artisan coffee, fresh pastries, and warm moments." />
+
+  <title>Kedai Kopi — Crafted with Passion, Brewed to Perfection</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon (SVG coffee cup) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233C2A21'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='18'>☕</text></svg>" />
+</head>
+
+<body>
+
+  <!-- =============================
+       HEADER / NAVIGATION
+       ============================= -->
+  <header class="site-header" id="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#" class="nav__logo" aria-label="Kedai Kopi home">
+        <span class="nav__logo-icon" aria-hidden="true">☕</span>
+        <span class="nav__logo-text">Kedai Kopi</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav__links" role="list" id="nav-links">
+        <li><a href="#about" class="nav__link">Our Story</a></li>
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#testimonials" class="nav__link">Reviews</a></li>
+        <li><a href="#visit" class="nav__link">Visit Us</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div class="nav__actions">
+        <a href="#visit" class="btn btn--outline btn--sm">Find Us</a>
+        <a href="#menu" class="btn btn--primary btn--sm">Order Now</a>
+        <!-- Mobile hamburger -->
+        <button class="nav__hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =============================
+         HERO SECTION
+         ============================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <!-- Ambient background orbs -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+        <div class="grain-overlay"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <!-- Badge -->
+          <div class="badge">
+            <span class="badge__dot" aria-hidden="true"></span>
+            <span>Serving fresh since 2018</span>
+          </div>
+
+          <h1 class="hero__headline" id="hero-heading">
+            Crafted with Passion,<br/>
+            <span class="gradient-text">Brewed to Perfection.</span>
+          </h1>
+          <p class="hero__subheadline">
+            From hand-selected beans to your perfect cup — every sip tells a story of craftsmanship, warmth, and passion for the art of coffee.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--primary btn--lg">Explore Our Menu</a>
+            <a href="#about" class="btn btn--ghost btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/>
+              </svg>
+              Our Story
+            </a>
+          </div>
+
+          <!-- Social proof -->
+          <div class="hero__social-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <div class="avatar avatar--1"></div>
+              <div class="avatar avatar--2"></div>
+              <div class="avatar avatar--3"></div>
+              <div class="avatar avatar--4"></div>
+            </div>
+            <p class="hero__proof-text"><strong>4.8/5</strong> from 1,200+ reviews</p>
+          </div>
+        </div>
+
+        <!-- Hero visual -->
+        <div class="hero__visual reveal reveal--right">
+          <div class="hero__image-frame">
+            <!-- Steam effect -->
+            <div class="steam-container" aria-hidden="true">
+              <div class="steam"></div>
+              <div class="steam"></div>
+              <div class="steam"></div>
+            </div>
+            <div class="hero__image-placeholder">
+              ☕ Hero Image Placeholder
+            </div>
+            <!-- Floating info cards -->
+            <div class="float-card float-card--top" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4A574" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span class="float-card__value">4.8★</span>
+              <span class="float-card__label">Google Rating</span>
+            </div>
+            <div class="float-card float-card--bottom" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A9E7E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 12l3 3 5-6"/></svg>
+              <span class="float-card__value">100%</span>
+              <span class="float-card__label">Arabica Beans</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================
+         ABOUT / STORY SECTION
+         ============================= -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container about__inner">
+
+        <div class="about__img-frame reveal reveal--left">
+          <div class="about__img-placeholder">
+            ☕ About Image Placeholder
+          </div>
+          <!-- Decorative rings -->
+          <div class="coffee-ring coffee-ring--1" aria-hidden="true"></div>
+          <div class="coffee-ring coffee-ring--2" aria-hidden="true"></div>
+        </div>
+
+        <div class="about__content reveal reveal--right">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title" id="about-heading">Where Every Cup<br/>Tells a Story</h2>
+          <p class="section-body">
+            Born from a love of good coffee and great conversations, Kedai Kopi began as a small corner shop in 2018. Today, we continue to hand-roast every batch, source directly from local farmers, and pour love into every cup we serve.
+          </p>
+          <ul class="about__checklist" role="list" style="margin-top: var(--space-6); margin-bottom: var(--space-6);">
+            <li class="checklist-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Single-origin beans, ethically sourced
+            </li>
+            <li class="checklist-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Small-batch roasting for maximum freshness
+            </li>
+            <li class="checklist-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Baristas trained in specialty coffee artistry
+            </li>
+            <li class="checklist-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Cozy atmosphere designed for comfort
+            </li>
+          </ul>
+          <a href="#menu" class="btn btn--primary btn--md">See Our Menu</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================
+         MENU HIGHLIGHTS SECTION
+         ============================= -->
+    <section class="menu section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Menu</span>
+          <h2 class="section-title" id="menu-heading">Signature Drinks &<br/>Fresh Bites</h2>
+          <p class="section-body section-body--centered">
+            Every item on our menu is crafted with care, using only the finest ingredients and time-honored techniques.
+          </p>
+        </div>
+
+        <div class="menu__grid">
+
+          <!-- Menu Card 1 -->
+          <article class="menu-card reveal" aria-label="Classic Espresso">
+            <div class="menu-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+            </div>
+            <h3 class="menu-card__title">Classic Espresso</h3>
+            <span class="menu-card__price">From $3.50</span>
+            <p class="menu-card__body">A rich, bold shot of pure espresso made from our house blend. Intense aroma with a smooth, lingering finish.</p>
+            <a href="#visit" class="menu-card__link">
+              Order Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Menu Card 2 -->
+          <article class="menu-card reveal" aria-label="Creamy Cappuccino">
+            <div class="menu-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+            </div>
+            <h3 class="menu-card__title">Creamy Cappuccino</h3>
+            <span class="menu-card__price">From $4.50</span>
+            <p class="menu-card__body">Perfect balance of espresso, steamed milk, and velvety foam. Topped with a sprinkle of cocoa powder.</p>
+            <a href="#visit" class="menu-card__link">
+              Order Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Menu Card 3 -->
+          <article class="menu-card reveal" aria-label="Smooth Latte">
+            <div class="menu-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 4-4 4-8s-2-6-2-10"/><path d="M2 10c0 4 0 8 3 8 1.25 0 2.5-1.06 4-1.06"/><path d="M2 2c0 4 4 8 10 8s10-4 10-8"/></svg>
+            </div>
+            <h3 class="menu-card__title">Smooth Latte</h3>
+            <span class="menu-card__price">From $4.75</span>
+            <p class="menu-card__body">Silky smooth espresso layered with perfectly steamed milk. Available with vanilla, caramel, or hazelnut flavors.</p>
+            <a href="#visit" class="menu-card__link">
+              Order Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Menu Card 4 -->
+          <article class="menu-card reveal" aria-label="Cold Brew">
+            <div class="menu-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3 class="menu-card__title">Cold Brew</h3>
+            <span class="menu-card__price">From $5.00</span>
+            <p class="menu-card__body">Steeped for 18 hours for a clean, refreshing taste. Lower acidity with naturally sweet, chocolatey undertones.</p>
+            <a href="#visit" class="menu-card__link">
+              Order Now
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Menu Card 5 -->
+          <article class="menu-card reveal" aria-label="Fresh Pastries">
+            <div class="menu-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="menu-card__title">Fresh Pastries</h3>
+            <span class="menu-card__price">From $3.00</span>
+            <p class="menu-card__body">Baked fresh every morning — croissants, muffins, cinnamon rolls, and seasonal specialties made in-house daily.</p>
+            <a href="#visit" class="menu-card__link">
+              View All
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Menu Card 6 -->
+          <article class="menu-card reveal" aria-label="Specialty Blend">
+            <div class="menu-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="menu-card__title">Specialty Blend</h3>
+            <span class="menu-card__price">From $5.50</span>
+            <p class="menu-card__body">Our barista's seasonal creation — a rotating selection of unique drinks featuring rare single-origin beans and creative pairings.</p>
+            <a href="#visit" class="menu-card__link">
+              Discover
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================
+         STATS BAND
+         ============================= -->
+    <section class="stats-band section" aria-label="Key statistics">
+      <div class="container stats-band__inner">
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="7">0</span>
+          <span class="stat-item__suffix">+</span>
+          <p class="stat-item__label">Years of brewing</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="500">0</span>
+          <span class="stat-item__suffix">+</span>
+          <p class="stat-item__label">Cups served daily</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="15">0</span>
+          <span class="stat-item__suffix"></span>
+          <p class="stat-item__label">Bean varieties</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="1200">0</span>
+          <span class="stat-item__suffix">+</span>
+          <p class="stat-item__label">Happy customers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================
+         TESTIMONIALS SECTION
+         ============================= -->
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What They Say</span>
+          <h2 class="section-title" id="testimonials-heading">Loved by Coffee<br/>Enthusiasts</h2>
+        </div>
+
+        <!-- Slider wrapper -->
+        <div class="testimonials__slider" id="testimonials-slider" aria-label="Customer testimonials" role="region">
+          <div class="testimonials__track" id="testimonials-track">
+
+            <!-- Testimonial 1 -->
+            <article class="testimonial-card" aria-label="Testimonial from Rina Ayu">
+              <div class="testimonial-card__stars" aria-label="5 stars" role="img">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "The best coffee I've had outside of Italy. The atmosphere is so warm and welcoming — it's become my daily escape. Their cappuccino is absolutely divine!"
+              </blockquote>
+              <footer class="testimonial-card__author">
+                <div class="author-avatar author-avatar--1" aria-hidden="true"></div>
+                <div>
+                  <p class="author-name">Rina Ayu</p>
+                  <p class="author-role">Coffee Enthusiast</p>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="testimonial-card" aria-label="Testimonial from David Chen">
+              <div class="testimonial-card__stars" aria-label="5 stars" role="img">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "I work remotely and this is my go-to workspace. Fast WiFi, amazing cold brew, and the friendliest baristas in town. Their pastries are incredible too!"
+              </blockquote>
+              <footer class="testimonial-card__author">
+                <div class="author-avatar author-avatar--2" aria-hidden="true"></div>
+                <div>
+                  <p class="author-name">David Chen</p>
+                  <p class="author-role">Remote Developer</p>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="testimonial-card" aria-label="Testimonial from Sarah Williams">
+              <div class="testimonial-card__stars" aria-label="5 stars" role="img">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "From the moment you walk in, you feel at home. The aroma, the décor, the music — everything is perfect. My weekend ritual starts and ends here."
+              </blockquote>
+              <footer class="testimonial-card__author">
+                <div class="author-avatar author-avatar--3" aria-hidden="true"></div>
+                <div>
+                  <p class="author-name">Sarah Williams</p>
+                  <p class="author-role">Food Blogger</p>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Testimonial 4 -->
+            <article class="testimonial-card" aria-label="Testimonial from Marco Rossi">
+              <div class="testimonial-card__stars" aria-label="5 stars" role="img">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D4A574" stroke="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "As a professional barista myself, I'm blown away by their attention to detail. Their single-origin pour-over is one of the best I've tasted anywhere."
+              </blockquote>
+              <footer class="testimonial-card__author">
+                <div class="author-avatar author-avatar--4" aria-hidden="true"></div>
+                <div>
+                  <p class="author-name">Marco Rossi</p>
+                  <p class="author-role">Professional Barista</p>
+                </div>
+              </footer>
+            </article>
+
+          </div><!-- /.testimonials__track -->
+
+          <!-- Slider Controls -->
+          <div class="testimonials__controls" aria-label="Slider controls">
+            <button class="slider-btn slider-btn--prev" id="slider-prev" aria-label="Previous testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="slider-dots" id="slider-dots" role="tablist" aria-label="Testimonial pagination"></div>
+            <button class="slider-btn slider-btn--next" id="slider-next" aria-label="Next testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+
+        </div><!-- /.testimonials__slider -->
+      </div>
+    </section>
+
+    <!-- =============================
+         VISIT US / CTA SECTION
+         ============================= -->
+    <section class="cta-section section" id="visit" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-card__bg" aria-hidden="true">
+            <div class="cta-orb cta-orb--1"></div>
+            <div class="cta-orb cta-orb--2"></div>
+          </div>
+          <div class="cta-card__content">
+            <span class="section-label">Get in Touch</span>
+            <h2 class="cta-card__headline" id="cta-heading">Visit Us Today &<br/>Taste the Difference</h2>
+            <p class="cta-card__body">
+              Drop by our shop or reach out — we'd love to hear from you. Reserve a table, ask about catering, or just say hello.
+            </p>
+            <form class="cta-form" id="cta-form" novalidate aria-label="Contact form">
+              <div class="cta-form__group">
+                <label for="cta-email" class="visually-hidden">Email address</label>
+                <input
+                  type="email"
+                  id="cta-email"
+                  name="email"
+                  class="cta-form__input"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="cta-form-msg"
+                />
+                <button type="submit" class="btn btn--primary" id="cta-submit-btn">
+                  Send Message
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+              <p id="cta-form-msg" class="cta-form__msg" role="alert" aria-live="polite"></p>
+            </form>
+            <p class="cta-card__footnote">We'll get back to you within 24 hours · No spam</p>
+
+            <!-- Opening hours -->
+            <div class="cta-hours">
+              <h3 class="cta-hours__title">Opening Hours</h3>
+              <p class="cta-hours__item">Mon – Fri: 7:00 AM – 9:00 PM</p>
+              <p class="cta-hours__item">Sat – Sun: 8:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================
+       FOOTER
+       ============================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <a href="#" class="nav__logo" aria-label="Kedai Kopi home">
+          <span class="nav__logo-icon" aria-hidden="true">☕</span>
+          <span class="nav__logo-text">Kedai Kopi</span>
+        </a>
+        <p class="footer-brand__tagline">Crafted with passion. Brewed to perfection. Your daily escape starts here.</p>
+        <!-- Social icons -->
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links columns -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav__col">
+          <h3 class="footer-nav__heading">Menu</h3>
+          <ul role="list">
+            <li><a href="#menu" class="footer-link">Espresso</a></li>
+            <li><a href="#menu" class="footer-link">Cappuccino</a></li>
+            <li><a href="#menu" class="footer-link">Latte</a></li>
+            <li><a href="#menu" class="footer-link">Cold Brew</a></li>
+            <li><a href="#menu" class="footer-link">Pastries</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav__col">
+          <h3 class="footer-nav__heading">Company</h3>
+          <ul role="list">
+            <li><a href="#about" class="footer-link">Our Story</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#visit" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav__col">
+          <h3 class="footer-nav__heading">Visit</h3>
+          <ul role="list">
+            <li><a href="#visit" class="footer-link">Location</a></li>
+            <li><a href="#visit" class="footer-link">Hours</a></li>
+            <li><a href="#" class="footer-link">Reservations</a></li>
+            <li><a href="#" class="footer-link">Catering</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav__col">
+          <h3 class="footer-nav__heading">Legal</h3>
+          <ul role="list">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p class="footer-copyright">© 2026 Kedai Kopi. All rights reserved.</p>
+        <p class="footer-tagline">Made with ♥ and plenty of caffeine.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Deferred JavaScript -->
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
